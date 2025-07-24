@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "WEEEK Топик",
+    "version": "1.0",
+    "description": "Выгрузка топика WEEEK по выполняемым задачам",
+    "permissions": ["cookies", "scripting", "webRequest"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": ["https://app.weeek.net"],
+    "action": {
+        "default_title": "WEEEK Топик",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "16.png",
+            "48": "48.png",
+            "128": "128.png"
+        }
+    }
+}
